@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // Déclarer des chaines de charactères
+    var nom = "Kevin";
+    var nom2 = 'Teresa';
+    var nom3 = `Charles`;
+
+    // Déclarer des nombres
+    var nb = 34;
+    var nb2 = 25.5;
+
+    // Déclarer des boolean
+    var vrai = true;
+    var faux = false;
+
+    // Opérateur
+
+    var addition  = 2 + 2
+    var soustraction  = 2 - 2
+    var multiplication  = 2 * 2
+    var division = 2 / 2
+    
+    // Exercice
+    var jour = "Lundi";
+    var date_jour = 25;
+    var annee_depart = 2000;
+    var annee_fin = 2021;
+
+    var phrase = "Bonjour, nous somme le " + jour + ' ' + date_jour + ", il y a une différence de " + (annee_fin - annee_depart) + " année.";
+
+    // console.log(phrase);
+
+    var voiture = "Renault Clio";
+    var annee = 1999;
+
+    var phrase2 = "Votre " + voiture + " à été achetée en " + annee;
+
+    // console.log(phrase2);
+
+    // Déclarer des tableaux
+    const tableau_1 = ["Jean", "Claudia", "Paul"];
+    const tableau_2 = [34, true, "Paul", phrase2, ['a', 'b'], '...'];
+
+    // Accéder à un element
+    tableau_1[1]; // -> "Claudia"
+
+    // Exercice
+
+    const t1 = [2, 4, 10, 4];
+    t1[2]; // -> `10`
+
+    // const t2 = [ "coucou", 3 ,"test", ["ok"], [true, false], "lol"];
+    const t2 = [
+      "coucou", // 0
+      3,        // 1
+      "test",   // 2
+      ["ok"],   // 3
+      [true, false], // 4
+      "lol" // 5
+    ];
+
+    t2[0]; // -> `coucou`
+    t2[3][0]; // -> `ok`
+
+    let test = t2[3]; // -> `["ok"]`
+    // test = ["ok"];
+    t2[3][0]; // -> "ok"
+    t2[4][0]; // -> true
+
+    const classes = [
+      ["Paul", "jean", "mathilde"], 
+      ["Luc", "Pierre"], 
+      ["Cloe", "Kevin", "Olivier"]
+    ];
+    // Chercher Luc
+    classes[1][0]; // -> Luc
+
+    // Connaitre la longeur d'un tableau
+    classes.length;
+
+    // Les Objects
+
+    const mon_object_1 = { eleve1: "Cloe", eleve2: "Kevin", eleve3: "Olivier" };
+
+    mon_object_1.eleve2; // -> "Kevin"
+    mon_object_1["eleve2"]; // -> "Kevin"
+
+    const kevin = { name: "Kevin", age: 28, hobby: ["Course à pied", "natation", "manger"]}
+
+    kevin.name; // -> Kevin
+    kevin["name"]; // -> Kevin
+    
+  </script>
+</body>
+</html>
